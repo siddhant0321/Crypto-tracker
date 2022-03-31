@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Crypto Tracker</title>
+    <style media="screen">
+    h1{
+      padding-bottom:50px;
+      color:#FFD700;
+    }
+    #lable1{
+      padding-bottom:20px ;
+      font-size: 24px;
+      color:white;
+    }
+    .coin-type{
+      width:400px;
+      padding-bottom: 25px;
+      padding:24px;
+      margin-left:auto;
+      margin-right:auto;
+      text-align: center;
+    }
+    .select-coin{
+      margin-top:12px;
+      margin-bottom:18px;
+      background-color: white;
+      border:2px solid lightblue;
+      padding:10px 22px;
+      border-radius: 8px;
+      outline: none;
+      cursor: pointer;
+      text-transform: capitalize;
+    }
+    .select-coin:hover{
+      background-color:#4169e1;
+    }
+    #btn-getprice:hover{
+      background-color: #4169e1;
+    }
+    #btn-getprice{
+      background-color: white;
+      border:2px solid lightblue;
+      padding:10px 22px;
+      border-radius: 8px;
+      outline: none;
+      cursor: pointer;
+      text-transform: capitalize;
+    }
+    body{
+
+      background-image: url("https://c4.wallpaperflare.com/wallpaper/121/71/740/abstract-digital-art-dark-cryptocurrency-wallpaper-preview.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    table{
+      background-color: #4169e1;
+      color:;
+
+    }
+    </style>
+  </head>
+  <body>
+
+    <div class="coin-type">
+      <form class="register" action="POST" id="search">
+        <h1>Crypto Tracker</h1>
+        <p id="lable1" fontsize="20px"><b>Select Coin Type</b></p>
+        <select class="select-coin" name="coinType" class="form-control" id="xyz">
+          <option value="bitcoin">Bitcoin</option>
+          <option value="dogecoin">Dogecoin</option>
+          <option value="ethereum">Ethereum</option>
+          <option value="litecoin">Litecoin</option>
+          <option value="ripple">Ripple</option>
+        </select>
+
+        <button id="btn-getprice" type="submit">Get Price</button>
+        <table class="coin-type" border="1px" id="tableResult">
+         </table>
+      </form>
+    </div>
+
+
+     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+  </html>
