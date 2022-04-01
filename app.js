@@ -37,7 +37,7 @@ const fetchPrice= async(ctype) =>{
     res.innerHTML =`<tr style="  border:1px solid black;
       font-size:24px;
       width:6px;
-      background-color:lightblue;">
+      background-color:#4169e1;">
 <td>
     Property
 </td>
